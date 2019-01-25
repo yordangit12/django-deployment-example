@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+    <!-- 'basic_app' comes from app_name = basic_app in urls.py
+    'other' comes from the name in name= in urls.py-->
+    <a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a>
+    <!-- admin is from settings.py INSTALLED_APPS django.contrib.admin.
+    admin is a built in app. inside there's an index view-->
+    <a href="{% url 'admin:index' %}">LINK TO ADMIN</a>
+    <a href="{% url 'index' %}">LINK TO INDEX!</a>
+  </body>
+</html>
